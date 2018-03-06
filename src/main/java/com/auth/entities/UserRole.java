@@ -1,6 +1,7 @@
 package com.auth.entities;
 
 import javax.persistence.Column;
+import javax.persistence.Entity;
 import javax.persistence.EnumType;
 import javax.persistence.Enumerated;
 import javax.persistence.GeneratedValue;
@@ -14,6 +15,7 @@ import org.springframework.security.core.GrantedAuthority;
 import com.auth.utils.Enums.RoleType;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 
+@Entity
 public class UserRole implements GrantedAuthority {
 	private static final long serialVersionUID = 1L;
 
